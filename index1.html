@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mihir Home Stay | Book Your Stay</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(to right, #004aad, #007bff);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 34px;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 16px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px 0;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .hero-text h2 {
+      font-size: 28px;
+      color: #004aad;
+      margin-bottom: 10px;
+    }
+
+    .hero-text p {
+      font-size: 16px;
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #25d366;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #128c7e;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 26px;
+      margin: 30px 0 15px;
+      color: #004aad;
+    }
+
+    .rooms {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.12);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 15px;
+      margin-bottom: 6px;
+      line-height: 1.5;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #e63946;
+      margin-top: 8px;
+    }
+
+    .contact-box {
+      background: #004aad;
+      color: white;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .contact-box h2 {
+      margin-bottom: 10px;
+    }
+
+    .contact-box p {
+      margin: 6px 0;
+      font-size: 17px;
+    }
+
+    .contact-box a {
+      color: yellow;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+
+    @media(max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Mihir Home Stay</h1>
+    <p>Comfortable & Budget Friendly Stay | Perfect for Family & Friends</p>
+  </header>
+
+  <div class="container">
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+      <div class="hero-text">
+        <h2>Welcome to Mihir Home Stay</h2>
+        <p>
+          Enjoy a peaceful and comfortable stay near the beach.
+          We provide AC & Non-AC rooms with family-friendly environment.
+          Perfect for friends, families and group stays.
+        </p>
+
+        <a class="btn" href="https://wa.me/918767139923" target="_blank">
+          📲 Book on WhatsApp
+        </a>
+      </div>
+
+      <div>
+        <img src="banner.jpg" alt="Mihir Home Stay Banner">
+      </div>
+    </div>
+
+    <!-- ROOMS -->
+    <h2 class="section-title">Our Rooms & Pricing</h2>
+
+    <div class="rooms">
+
+      <div class="card">
+        <h3>Room 1 (Non-AC)</h3>
+        <p>✅ Capacity: Up to 6 persons</p>
+        <p>🛏️ Beds: 2</p>
+        <p class="price">💰 ₹2000 / night (4 persons)</p>
+        <p>➕ Extra Person: ₹400 per person</p>
+      </div>
+
+      <div class="card">
+        <h3>Room 2 (AC / Non-AC)</h3>
+        <p>✅ Capacity: 2 Adults + 2 Children</p>
+        <p>🛏️ Bed: 1</p>
+        <p>🛌 Extra mattress for children available</p>
+        <p class="price">💰 Non-AC: ₹1500 / night (2 persons)</p>
+        <p class="price">💰 AC: ₹3000 / night (2 persons)</p>
+        <p>➕ Extra Person: ₹400 per person</p>
+      </div>
+
+      <div class="card">
+        <h3>Room 3 (Non-AC)</h3>
+        <p>✅ Capacity: 2 persons</p>
+        <p>❄️ Non-AC</p>
+        <p class="price">💰 ₹1500 / night</p>
+      </div>
+
+      <div class="card">
+        <h3>Room 4 (Hall / Dormitory)</h3>
+        <p>✅ Capacity: Up to 12 persons</p>
+        <p>🚿 Common Bathroom Available</p>
+        <p>🛏️ Satranji + Blanket + Pillow</p>
+        <p class="price">💰 ₹300 per person / night</p>
+      </div>
+
+      <div class="card">
+        <h3>Room 5 (Hall / Dormitory)</h3>
+        <p>✅ Capacity: Up to 6 persons</p>
+        <p>🚿 Common Bathroom Available</p>
+        <p>🛏️ Satranji + Blanket + Pillow</p>
+        <p class="price">💰 ₹300 per person / night</p>
+      </div>
+
+    </div>
+
+    <!-- CONTACT -->
+    <div class="contact-box">
+      <h2>📞 Contact for Booking</h2>
+      <p>Room Booking Contact:</p>
+      <p>📲 <a href="tel:+918767139923">8767139923</a></p>
+      <p>📲 <a href="tel:+918275041032">8275041032</a></p>
+      <br>
+      <a class="btn" href="https://wa.me/918767139923" target="_blank">
+        WhatsApp Now
+      </a>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 Mihir Home Stay | All Rights Reserved
+  </footer>
+
+</body>
+</html>
